@@ -14,15 +14,11 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const { user, isLoggedIn, isLoading, signOut } = useBedrockPassport();
+  const { user, isLoggedIn, signOut } = useBedrockPassport();
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (!isLoading) {
-      setLoading(false);
-    }
-  }, [isLoading]);
+
 
   const login = () => {
     router.push("/login");
