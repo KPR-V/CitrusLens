@@ -6,12 +6,10 @@ import { AppWrapper } from "../components/context";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import "@bedrock_org/passport/dist/style.css";
-import BedrockAuthProvider from "@/components/auth/BedrockAuthProvider";
-import { AuthProvider } from "@/components/auth/AuthContext";
+import BedrockAuthProvider from "../components/auth/BedrockAuthProvider";
+import { AuthProvider } from "../components/auth/AuthContext";
 import "@/styles/globals.css";
 import "@bedrock_org/passport/dist/style.css";
-import BedrockAuthProvider from "@/components/auth/BedrockAuthProvider";
-import { AuthProvider } from "@/components/auth/AuthContext";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
