@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
 import Providers from "./providers";
 import "@rainbow-me/rainbowkit/styles.css";
@@ -8,17 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "@bedrock_org/passport/dist/style.css";
 import BedrockAuthProvider from "../components/auth/BedrockAuthProvider";
 import { AuthProvider } from "../components/auth/AuthContext";
-import "@/styles/globals.css";
 import "@bedrock_org/passport/dist/style.css";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "CitrusLens",
